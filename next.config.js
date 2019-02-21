@@ -53,11 +53,12 @@ const nextConfig = {
   },
   ///assetPrefix: process.env.NODE_ENV === "production" ? 'https://cdn.cloudflare.com' : null,
   webpack: (config, options) => {
-    /* Aliases to use same path in imports everywhere, i.e. import DatePicker from "components/common/DatePicker"; */
-    config.resolve.alias.static = __dirname + '/static/';
-    config.resolve.alias.components = __dirname + '/components/';
-    config.resolve.alias.utils = __dirname + '/utils/';
-    config.resolve.alias.data = __dirname + '/data/';
+    /* Aliases to use same path in imports everywhere, i.e. import DatePicker from "bsm-shared/components/common/DatePicker"; */
+    config.resolve.alias.shared = __dirname + '/bsm-shared/';
+    config.resolve.alias.static = __dirname + '/bsm-shared/static/';
+    config.resolve.alias.components = __dirname + '/bsm-shared/components/';
+    config.resolve.alias.utils = __dirname + '/bsm-shared/utils/';
+    config.resolve.alias.data = __dirname + '/bsm-shared/data/';
 
     /* compression-webpack-plugin creates precompressed *.gz files for nginx gzip_static */
     //const CompressionPlugin = require('compression-webpack-plugin');
@@ -73,6 +74,9 @@ const nextConfig = {
         config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}));
       }
     }
+
+    config.resolve.symlinks = false;
+
     /* done */
     return config
   },

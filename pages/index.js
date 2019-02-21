@@ -1,25 +1,25 @@
 import React, {Component} from 'react'
 import Link from "next/link";
-import Wrapper from 'components/Wrapper';
-import BlockNav from 'components/common/BlockNav';
-import NavRow from 'components/common/BlockNav/NavRow';
-import MessBlock from "components/common/MessBlock/index.js";
-import ProfitsBlockSlider from "components/common/ProfitsBlockSlider";
-import Form from "components/common/forms/Big";
-import ServiceBlock from "components/common/ServiceBlock";
-import MapBlock from 'components/common/MapBlock';
-import {ToggleCallPopup, ToggleQuestionPopup} from "components/modals/Call"
-import schemaSrc from 'static/images/contacts/how-to-go.jpg';
-import Address from 'components/contacts/Address'
-import FormsData from 'data/form/main';
+import Wrapper from 'bsm-shared/components/Wrapper';
+import BlockNav from 'bsm-shared/components/common/BlockNav';
+import NavRow from 'bsm-shared/components/common/BlockNav/NavRow';
+import MessBlock from "bsm-shared/components/common/MessBlock/index.js";
+import ProfitsBlockSlider from "bsm-shared/components/common/ProfitsBlockSlider";
+import Form from "bsm-shared/components/common/forms/Big";
+import ServiceBlock from "bsm-shared/components/common/ServiceBlock";
+import MapBlock from 'bsm-shared/components/common/MapBlock';
+import {ToggleCallPopup, ToggleQuestionPopup} from "bsm-shared/components/modals/Call"
+import schemaSrc from 'bsm-shared/static/images/contacts/how-to-go.jpg';
+import Address from 'bsm-shared/components/contacts/Address'
+import FormsData from 'bsm-shared/data/form/main';
 import  {
   HeaderLi,
   HeaderUl,
   HeaderNavA,
-  } from '/components/Header/style.js';
-import PageWrapper from 'components/common/PageWrapper/index.js';
-import TextBlock from 'components/common/TextBlock/index.js';
-import InfoBlock from "components/common/InfoBlock/index.js";
+  } from '/bsm-shared/components/Header/style.js';
+import PageWrapper from 'bsm-shared/components/common/PageWrapper/index.js';
+import TextBlock from 'bsm-shared/components/common/TextBlock/index.js';
+import InfoBlock from "bsm-shared/components/common/InfoBlock/index.js";
 
 
 /**/
@@ -67,7 +67,7 @@ class page extends Component {
           <ServiceBlock
             color="#333333"
             url="#pricing"
-            image={require('static/images/block/j.jpg')}
+            image={require('bsm-shared/static/images/block/j.jpg')}
             gradient="rgba(199, 212, 229, 0.95), rgba(199, 212, 229, 0.7)"
             title="BeSmarter!"
             text={<div>
@@ -188,45 +188,45 @@ class page extends Component {
             </TextBlock>
 
             <InfoBlock infoBlockConfig={[
-                {icon: require("static/images/info/1.svg"), title: 'Стоимость консультации', desc: 'Индивидуально по запросу' },
-                {icon: require("static/images/info/2.svg"), title: 'Срок выполнения', desc: 'От 2 часов' },
-                {icon: require("static/images/info/3.svg"), title: 'Гарантии', desc: 'Сделаем все, о чем договорились'},
-                {icon: require("static/images/info/4.svg"), title: 'Договор', desc: 'Внесение дополнений и пожеланий'},
-                {icon: require("static/images/info/5.svg"), title: 'Материалы для защиты', desc: 'Полный комплект для успешной защиты'},
-                {icon: require("static/images/info/6.svg"), title: 'Эксперт-преподаватель', desc: 'Проверенный специалист с опытом' },
-                {icon: require("static/images/info/7.svg"), title: 'Уникальность', desc: 'Проверка в разных системах' },
-                {icon: require("static/images/info/8.svg"), title: 'Язык', desc: 'Русский, английский, французский, немецкий, и др.' },
+                {icon: require("bsm-shared/static/images/info/1.svg"), title: 'Стоимость консультации', desc: 'Индивидуально по запросу' },
+                {icon: require("bsm-shared/static/images/info/2.svg"), title: 'Срок выполнения', desc: 'От 2 часов' },
+                {icon: require("bsm-shared/static/images/info/3.svg"), title: 'Гарантии', desc: 'Сделаем все, о чем договорились'},
+                {icon: require("bsm-shared/static/images/info/4.svg"), title: 'Договор', desc: 'Внесение дополнений и пожеланий'},
+                {icon: require("bsm-shared/static/images/info/5.svg"), title: 'Материалы для защиты', desc: 'Полный комплект для успешной защиты'},
+                {icon: require("bsm-shared/static/images/info/6.svg"), title: 'Эксперт-преподаватель', desc: 'Проверенный специалист с опытом' },
+                {icon: require("bsm-shared/static/images/info/7.svg"), title: 'Уникальность', desc: 'Проверка в разных системах' },
+                {icon: require("bsm-shared/static/images/info/8.svg"), title: 'Язык', desc: 'Русский, английский, французский, немецкий, и др.' },
             ]}/>
 
           <a name="about" style={{position: "absolute", marginTop: "-2em"}}/>
           <ProfitsBlockSlider profitBlockConfig={[
             {
-              imageSrc: require('static/images/slide-profits/1.svg'),
+              imageSrc: require('bsm-shared/static/images/slide-profits/1.svg'),
               title: "Наша команда",
               description: "Опытные менеджеры помогут разобраться с твоим вопросом",
             },
             {
-              imageSrc: require('static/images/slide-profits/2.svg'),
+              imageSrc: require('bsm-shared/static/images/slide-profits/2.svg'),
               title: "Конфиденциальность",
               description: "Мы никому не раскрываем твои контактные данные, сохраняя анонимность",
             },
             {
-              imageSrc: require('static/images/slide-profits/3.svg'),
+              imageSrc: require('bsm-shared/static/images/slide-profits/3.svg'),
               title: "Опыт работы",
               description: "Мы успешно помогаем в вопросах учебы студентам уже более десяти лет",
             },
             {
-              imageSrc: require('static/images/slide-profits/4.svg'),
+              imageSrc: require('bsm-shared/static/images/slide-profits/4.svg'),
               title: "Личный консультант",
               description: "Максимально быстро и точно ответит на твои вопросы. Работа станет понятной и красивой",
             },
             {
-              imageSrc: require('static/images/slide-profits/5.svg'),
+              imageSrc: require('bsm-shared/static/images/slide-profits/5.svg'),
               title: "Сервисы",
               description: "Мы постоянно обновляем нашу базу используемых сервисов, следя за развитием и изменением технологий",
             },
             {
-              imageSrc: require('static/images/slide-profits/6.svg'),
+              imageSrc: require('bsm-shared/static/images/slide-profits/6.svg'),
               title: "Профессионализм",
               description: "Те, кому мы помогли, становятся нашими постоянными клиентами",
             },
@@ -235,7 +235,7 @@ class page extends Component {
           <ServiceBlock
             color="#333333"
             url="#contacts"
-            image={require('static/images/block/7.jpg')}
+            image={require('bsm-shared/static/images/block/7.jpg')}
             gradient="rgba(199, 212, 229, 0.95), rgba(199, 212, 229, 0.7)"
             title="Консультации"
             text={<div>
@@ -315,7 +315,7 @@ class page extends Component {
             <ServiceBlock
                 color="#333333"
                 url="#contacts"
-                image={require('static/images/block/g.jpg')}
+                image={require('bsm-shared/static/images/block/g.jpg')}
                 gradient="rgba(199, 212, 229, 0.95), rgba(199, 212, 229, 0.7)"
                 title="Удобный офис в центре"
                 text={<div>

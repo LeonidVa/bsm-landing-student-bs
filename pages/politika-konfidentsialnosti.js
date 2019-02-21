@@ -1,18 +1,18 @@
 import React from "react";
-import Wrapper from 'components/Wrapper';
-import PageWrapper from 'components/common/PageWrapper/index.js';
-import TextBlock from 'components/common/TextBlock/index.js';
-import Title from 'components/common/Title/index.js';
+import Wrapper from 'bsm-shared/components/Wrapper';
+import PageWrapper from 'bsm-shared/components/common/PageWrapper/index.js';
+import TextBlock from 'bsm-shared/components/common/TextBlock/index.js';
+import Title from 'bsm-shared/components/common/Title/index.js';
 import Link from 'next/link';
-import FormOrder from 'components/common/forms/Big/Order';
+import FormOrder from 'bsm-shared/components/common/forms/Big/Order';
 import  {
   HeaderLi,
   HeaderUl,
   HeaderNavA,
-} from '/components/Header/style.js';
+} from '/bsm-shared/components/Header/style.js';
 
-import ItemScope from "components/common/schema.org/ItemScope"
-import ItemListElement from "components/common/schema.org/ItemListElement"
+import ItemScope from "bsm-shared/components/common/schema.org/ItemScope"
+import ItemListElement from "bsm-shared/components/common/schema.org/ItemListElement"
 
 const page = () => (
   <Wrapper

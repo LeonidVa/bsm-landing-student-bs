@@ -1,6 +1,6 @@
 const path = require('path');
 const bn = path.basename(__dirname);
-const wdir = path.resolve(__dirname + '/../../');
+const wdir = path.resolve(__dirname);
 console.log(wdir, bn);
 module.exports = {
   apps: [

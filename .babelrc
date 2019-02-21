@@ -6,9 +6,10 @@
       {
         "root": ["./"],
         "alias": {
-          "@store": "./data/store",
-          "@redux": "./data/redux",
-          "@helpers": "./helpers"
+          "@bsm-shared": "./bsm-shared",
+          "@store": "./bsm-shared/data/store",
+          "@redux": "./bsm-shared/data/redux",
+          "@helpers": "./bsm-shared/helpers"
         }
       }
     ],
