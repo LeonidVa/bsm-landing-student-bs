@@ -1,4 +1,4 @@
-const redirectionUtils = require('./utils/redirect');
+const redirectionUtils = require('./bsm-shared/utils/redirect');
 const express = require('express');
 const next = require('next');
 const LRUCache = require('lru-cache');
@@ -21,7 +21,7 @@ app.prepare()
     .then(() => {
         const server = express();
         const faviconOptions = {
-            root: __dirname + '/static/'
+            root: __dirname + '/bsm-shared/static/'
         };
         server.get('/favicon.ico', (req, res) => (
             res.status(200).sendFile('favicon.ico', faviconOptions)

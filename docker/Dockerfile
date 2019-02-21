@@ -7,7 +7,7 @@ COPY . /app
 RUN apk add --no-cache bash && \
     cd /app && \
     yarn install && \
-    bash ./websites/main/build.sh
+    bash ./build.sh
 
 EXPOSE 3000
 
