@@ -1,5 +1,6 @@
 .idea
 .env
+/bsm-shared
 /node_modules
 /.next
 /uploads/*
@@ -11,7 +12,6 @@
 Thumbs.db
 **/Thumbs.db
 /out
-/pages
 **/__pycache__
 **/allure
 **/venv
