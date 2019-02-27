@@ -237,9 +237,9 @@ class page extends Component {
             url="#contacts"
             image={require('bsm-shared/static/images/block/7.jpg')}
             gradient="rgba(199, 212, 229, 0.95), rgba(199, 212, 229, 0.7)"
-            title="Консультации"
+            title="Все виды помощи"
             text={<div>
-                <p>по любым типам работ!</p>
+                <p>Для студентов и аспирантов</p>
               <p>От поступления до защиты</p>
               <p>От 3 000 рублей</p>
               <p>Срочно от 2 часов</p>
