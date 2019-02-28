@@ -9,8 +9,5 @@ build:
 docker:
   extends: .docker
 
-docker-latest:
-  extends: .docker-latest
-
 deploy:
   extends: .deploy
