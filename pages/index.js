@@ -17,6 +17,9 @@ import  {
   HeaderUl,
   HeaderNavA,
   } from '/bsm-shared/components/Header/style.js';
+import {
+    SpanFooter,
+} from '/bsm-shared/components/Footer/style.js';
 import PageWrapper from 'bsm-shared/components/common/PageWrapper/index.js';
 import TextBlock from 'bsm-shared/components/common/TextBlock/index.js';
 import InfoBlock from "bsm-shared/components/common/InfoBlock/index.js";
@@ -45,6 +48,14 @@ class page extends Component {
           </HeaderUl>
         }
         footerNavButtons=""
+        footerDisclaimer={
+        <div>
+            <SpanFooter>Уважаемые клиенты!</SpanFooter>
+            <SpanFooter>Компания «БиСмартер», строго выполняя требования законодательства РФ, не продаёт дипломы, курсовые и другие готовые работы.</SpanFooter>
+            <SpanFooter>Зато мы отлично отвечаем на все вопросы по учебе.</SpanFooter>
+        </div>
+        
+        }
       >
         <PageWrapper className="bg bg-c2 bg-img bg-img3">
 
@@ -105,7 +116,7 @@ class page extends Component {
                   description: "Научим тебя добавлять и правильно оформлять рисунки, графики, таблицы и диаграммы для наглядности материала."
                 },
                 {
-                  title: "Онлайн-консультации",
+                  title: "Онлайн-помощь",
                   text: [<p>по учебе, сдаче и защите</p>],
                   description: "Когда возникли вопросы по учебе и не знаешь кому их задать, задай их нам! Наш консультант подробно и понятно ответит тебе."
                 },
@@ -170,7 +181,7 @@ class page extends Component {
                 </h1>
                 <ul>
                     <li>
-                        <b>Качество.</b> Итогом твоего обращения к нам станет качественно предоставленная подробная  и понятная консультация по твоим учебным вопросам.
+                        <b>Качество.</b> Итогом твоего обращения к нам станeт предоставленные подробные и понятные ответы по твоим учебным вопросам.
                     </li>
 
                     <li>
@@ -188,7 +199,7 @@ class page extends Component {
             </TextBlock>
 
             <InfoBlock infoBlockConfig={[
-                {icon: require("bsm-shared/static/images/info/1.svg"), title: 'Стоимость консультации', desc: 'Индивидуально по запросу' },
+                {icon: require("bsm-shared/static/images/info/1.svg"), title: 'Стоимость', desc: 'Индивидуально по запросу' },
                 {icon: require("bsm-shared/static/images/info/2.svg"), title: 'Срок выполнения', desc: 'От 2 часов' },
                 {icon: require("bsm-shared/static/images/info/3.svg"), title: 'Гарантии', desc: 'Сделаем все, о чем договорились'},
                 {icon: require("bsm-shared/static/images/info/4.svg"), title: 'Договор', desc: 'Внесение дополнений и пожеланий'},
@@ -263,11 +274,11 @@ class page extends Component {
                 </h2>
                 <ul>
                     <li>
-                        <b>Компетентность.</b> В BeSmarter! ты  получишь подготовку  работы любой сложности
-                        с преподавателем московского или другого российского ВУЗа.
+                        <b>Компетентность.</b> В BeSmarter! с тобой будет работать
+                          преподаватель московского или другого российского ВУЗа над темой любой сложности.
                     </li>
                     <li>
-                        <b>Оперативность.</b> Возможна срочная консультация от 2-х часов. Такая оперативность
+                        <b>Оперативность.</b> Возможно срочное сотрудничество от 2-х часов. Такая оперативность
                         достигается благодаря использованию фирменного подхода, созданного в нашей компании.
                         Вы можете не тратить время на сбор материалов, разработку плана и так далее, а сделать заказ и спокойно заниматься своими делами.
                     </li>
