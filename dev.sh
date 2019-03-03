@@ -14,7 +14,7 @@ if [ ! -e "${DIR}/bsm-shared" ]; then
 fi
 
 if [ ! -e "${DIR}/node_modules" ]; then
-    yarn install
+    npm install
 fi
 
-yarn run dev
+npm run dev
